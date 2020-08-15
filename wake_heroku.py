@@ -6,7 +6,7 @@ import datetime
 # Replace this variable with your own Heroku App URL and custom variable
 warbler = "https://warbler-rithm14.herokuapp.com/" 
 
-sixteen_hours = 33 # sixteen hours divided into half-hours 
+sixteen_hours = 32 # sixteen hours divided into half-hours 
 
 def job():
     """ 
@@ -24,7 +24,7 @@ def job():
         print("Waking up Warbler at " + dt, response)
         time.sleep(1740) # sleep for 29 minutes
 
-# Sta17:59rts the loop every morning at 07:00AM pacific
+# Starts the loop every morning at 07:00AM pacific
 schedule.every().day.at("07:00").do(job) 
 
 while True: 
